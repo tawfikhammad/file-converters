@@ -506,16 +506,20 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "docling" },
+    { name = "ghostscript" },
     { name = "huggingface-hub", extra = ["hf-xet"] },
     { name = "langchain-community" },
+    { name = "pdf2image" },
     { name = "pymupdf4llm" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "docling", specifier = ">=2.54.0" },
+    { name = "ghostscript", specifier = ">=0.8.1" },
     { name = "huggingface-hub", extras = ["hf-xet"], specifier = ">=0.35.0" },
     { name = "langchain-community", specifier = ">=0.3.29" },
+    { name = "pdf2image", specifier = ">=1.17.0" },
     { name = "pymupdf4llm", specifier = ">=0.0.27" },
 ]
 
@@ -638,6 +642,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/de/e0/bab50af11c2d75c9c4a2a26a5254573c0bd97cea152254401510950486fa/fsspec-2025.9.0.tar.gz", hash = "sha256:19fd429483d25d28b65ec68f9f4adc16c17ea2c7c7bf54ec61360d478fb19c19", size = 304847, upload-time = "2025-09-02T19:10:49.215Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/47/71/70db47e4f6ce3e5c37a607355f80da8860a33226be640226ac52cb05ef2e/fsspec-2025.9.0-py3-none-any.whl", hash = "sha256:530dc2a2af60a414a832059574df4a6e10cce927f6f4a78209390fe38955cfb7", size = 199289, upload-time = "2025-09-02T19:10:47.708Z" },
+]
+
+[[package]]
+name = "ghostscript"
+version = "0.8.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/1e/4d/12eb41060aa530f22f5233bdc3bfa5c3f444c86e2853100cff9781536baa/ghostscript-0.8.1.tar.gz", hash = "sha256:7cfa85d201036bf87890e425b4a0cdc9749abc4670a4492ae2aa66ad792b1388", size = 28590, upload-time = "2025-05-28T19:19:57.129Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/3e/ef/8d76a3cb0fb62757edae6e3e5c9cdbde35402157cbea1b05d0c1b8ddf0c0/ghostscript-0.8.1-py3-none-any.whl", hash = "sha256:a801d1f0e3321d87c394d8c8f7d38e413692474c8a5cab7673b1b7f3a2c4b811", size = 25906, upload-time = "2025-05-28T19:19:55.609Z" },
 ]
 
 [[package]]
@@ -1844,6 +1857,18 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/15/d5/f0486090eb18dd8710bf60afeaf638ba6817047c0c8ae5c6a25598665609/pandas-2.3.2-cp313-cp313t-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:b37205ad6f00d52f16b6d09f406434ba928c1a1966e2771006a9033c736d30d2", size = 11883216, upload-time = "2025-08-21T10:27:59.302Z" },
     { url = "https://files.pythonhosted.org/packages/10/86/692050c119696da19e20245bbd650d8dfca6ceb577da027c3a73c62a047e/pandas-2.3.2-cp313-cp313t-musllinux_1_2_aarch64.whl", hash = "sha256:837248b4fc3a9b83b9c6214699a13f069dc13510a6a6d7f9ba33145d2841a012", size = 12699743, upload-time = "2025-08-21T10:28:02.447Z" },
     { url = "https://files.pythonhosted.org/packages/cd/d7/612123674d7b17cf345aad0a10289b2a384bff404e0463a83c4a3a59d205/pandas-2.3.2-cp313-cp313t-musllinux_1_2_x86_64.whl", hash = "sha256:d2c3554bd31b731cd6490d94a28f3abb8dd770634a9e06eb6d2911b9827db370", size = 13186141, upload-time = "2025-08-21T10:28:05.377Z" },
+]
+
+[[package]]
+name = "pdf2image"
+version = "1.17.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pillow" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/00/d8/b280f01045555dc257b8153c00dee3bc75830f91a744cd5f84ef3a0a64b1/pdf2image-1.17.0.tar.gz", hash = "sha256:eaa959bc116b420dd7ec415fcae49b98100dda3dd18cd2fdfa86d09f112f6d57", size = 12811, upload-time = "2024-01-07T20:33:01.965Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/62/33/61766ae033518957f877ab246f87ca30a85b778ebaad65b7f74fa7e52988/pdf2image-1.17.0-py3-none-any.whl", hash = "sha256:ecdd58d7afb810dffe21ef2b1bbc057ef434dabbac6c33778a38a3f7744a27e2", size = 11618, upload-time = "2024-01-07T20:32:59.957Z" },
 ]
 
 [[package]]
